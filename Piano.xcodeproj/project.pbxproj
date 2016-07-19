@@ -46,19 +46,9 @@
 		84710E811D141E0B00AA7C94 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 84710E801D141E0B00AA7C94 /* Podfile */; };
 		847AE4181D2FA56400A2B900 /* CAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847AE4171D2FA56400A2B900 /* CAGradientLayer.swift */; };
 		84BD46A11D14A33400DE6A36 /* LeftKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD46A01D14A33400DE6A36 /* LeftKeyboardView.swift */; };
-		84DF7F951D30D4F60044F168 /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84DF7F941D30D4F60044F168 /* sound.wav */; };
-		84DF7F961D30D4F60044F168 /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84DF7F941D30D4F60044F168 /* sound.wav */; };
 		84DF7F9B1D30EFFA0044F168 /* LandKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DF7F9A1D30EFFA0044F168 /* LandKeyboardView.swift */; };
 		84E171171D2D2F730081F0B0 /* RightKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E171161D2D2F730081F0B0 /* RightKeyboardView.swift */; };
 		84E171191D2D39490081F0B0 /* DefaultKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E171181D2D39490081F0B0 /* DefaultKeyboardView.swift */; };
-		84F299031D2E662F003CF614 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84F298FB1D2E662F003CF614 /* 1.wav */; };
-		84F299041D2E662F003CF614 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84F298FC1D2E662F003CF614 /* 2.wav */; };
-		84F299051D2E662F003CF614 /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84F298FD1D2E662F003CF614 /* 3.wav */; };
-		84F299061D2E662F003CF614 /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84F298FE1D2E662F003CF614 /* 4.wav */; };
-		84F299071D2E662F003CF614 /* 5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84F298FF1D2E662F003CF614 /* 5.wav */; };
-		84F299081D2E662F003CF614 /* 6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84F299001D2E662F003CF614 /* 6.wav */; };
-		84F299091D2E662F003CF614 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84F299011D2E662F003CF614 /* 7.wav */; };
-		84F2990A1D2E662F003CF614 /* 8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84F299021D2E662F003CF614 /* 8.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,18 +122,9 @@
 		84710E801D141E0B00AA7C94 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		847AE4171D2FA56400A2B900 /* CAGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradientLayer.swift; sourceTree = "<group>"; };
 		84BD46A01D14A33400DE6A36 /* LeftKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftKeyboardView.swift; sourceTree = "<group>"; };
-		84DF7F941D30D4F60044F168 /* sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound.wav; sourceTree = "<group>"; };
 		84DF7F9A1D30EFFA0044F168 /* LandKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandKeyboardView.swift; sourceTree = "<group>"; };
 		84E171161D2D2F730081F0B0 /* RightKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightKeyboardView.swift; sourceTree = "<group>"; };
 		84E171181D2D39490081F0B0 /* DefaultKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultKeyboardView.swift; sourceTree = "<group>"; };
-		84F298FB1D2E662F003CF614 /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 1.wav; path = ../../Desktop/N17R/Piano/1.wav; sourceTree = "<group>"; };
-		84F298FC1D2E662F003CF614 /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 2.wav; path = ../../Desktop/N17R/Piano/2.wav; sourceTree = "<group>"; };
-		84F298FD1D2E662F003CF614 /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 3.wav; path = ../../Desktop/N17R/Piano/3.wav; sourceTree = "<group>"; };
-		84F298FE1D2E662F003CF614 /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 4.wav; path = ../../Desktop/N17R/Piano/4.wav; sourceTree = "<group>"; };
-		84F298FF1D2E662F003CF614 /* 5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 5.wav; path = ../../Desktop/N17R/Piano/5.wav; sourceTree = "<group>"; };
-		84F299001D2E662F003CF614 /* 6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 6.wav; path = ../../Desktop/N17R/Piano/6.wav; sourceTree = "<group>"; };
-		84F299011D2E662F003CF614 /* 7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 7.wav; path = ../../Desktop/N17R/Piano/7.wav; sourceTree = "<group>"; };
-		84F299021D2E662F003CF614 /* 8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = 8.wav; path = ../../Desktop/N17R/Piano/8.wav; sourceTree = "<group>"; };
 		9AE574600244E51C00763817 /* Pods-Piano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Piano.release.xcconfig"; path = "Pods/Target Support Files/Pods-Piano/Pods-Piano.release.xcconfig"; sourceTree = "<group>"; };
 		9F2E14BB495239D5F986ABE9 /* Pods-Piano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Piano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Piano/Pods-Piano.debug.xcconfig"; sourceTree = "<group>"; };
 		AA7EBEF9C3780DF4539E0743 /* Pods_Piano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Piano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,25 +178,8 @@
 				846B201E1D3681DB00E70B21 /* NellaSueDEMO.ttf */,
 				846B20211D37848D00E70B21 /* AmaticSC-Regular.ttf */,
 				845CF6B01D168ED900F9AA6C /* Buttons */,
-				8442A92E1D15467200A8A23D /* Notes */,
 			);
 			name = Resources4App;
-			sourceTree = "<group>";
-		};
-		8442A92E1D15467200A8A23D /* Notes */ = {
-			isa = PBXGroup;
-			children = (
-				84DF7F941D30D4F60044F168 /* sound.wav */,
-				84F298FB1D2E662F003CF614 /* 1.wav */,
-				84F298FC1D2E662F003CF614 /* 2.wav */,
-				84F298FD1D2E662F003CF614 /* 3.wav */,
-				84F298FE1D2E662F003CF614 /* 4.wav */,
-				84F298FF1D2E662F003CF614 /* 5.wav */,
-				84F299001D2E662F003CF614 /* 6.wav */,
-				84F299011D2E662F003CF614 /* 7.wav */,
-				84F299021D2E662F003CF614 /* 8.wav */,
-			);
-			name = Notes;
 			sourceTree = "<group>";
 		};
 		845CF6B01D168ED900F9AA6C /* Buttons */ = {
@@ -452,7 +416,6 @@
 				845CF6BA1D169BA300F9AA6C /* up1.png in Resources */,
 				845CF6B51D16967A00F9AA6C /* 123.png in Resources */,
 				84710E4B1D14197400AA7C94 /* LaunchScreen.storyboard in Resources */,
-				84DF7F951D30D4F60044F168 /* sound.wav in Resources */,
 				84415F4D1D160A75007D9E0B /* Button.png in Resources */,
 				84710E481D14197400AA7C94 /* Assets.xcassets in Resources */,
 				845CF6B21D1690D700F9AA6C /* space.png in Resources */,
@@ -486,25 +449,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F299091D2E662F003CF614 /* 7.wav in Resources */,
 				845CF6BF1D169BA300F9AA6C /* up3.png in Resources */,
-				84DF7F961D30D4F60044F168 /* sound.wav in Resources */,
 				845CF6BB1D169BA300F9AA6C /* up1.png in Resources */,
-				84F299071D2E662F003CF614 /* 5.wav in Resources */,
-				84F299041D2E662F003CF614 /* 2.wav in Resources */,
 				846B20201D3681DB00E70B21 /* NellaSueDEMO.ttf in Resources */,
-				84F299031D2E662F003CF614 /* 1.wav in Resources */,
 				84415F511D160AAB007D9E0B /* piano-e.wav in Resources */,
 				846B20231D37848D00E70B21 /* AmaticSC-Regular.ttf in Resources */,
 				845CF67C1D166EED00F9AA6C /* black.png in Resources */,
-				84F299051D2E662F003CF614 /* 3.wav in Resources */,
-				84F299081D2E662F003CF614 /* 6.wav in Resources */,
 				845CF6B31D1690D700F9AA6C /* space.png in Resources */,
 				845CF6BD1D169BA300F9AA6C /* up2.png in Resources */,
-				84F2990A1D2E662F003CF614 /* 8.wav in Resources */,
 				845CF6B61D16967A00F9AA6C /* 123.png in Resources */,
 				84710E811D141E0B00AA7C94 /* Podfile in Resources */,
-				84F299061D2E662F003CF614 /* 4.wav in Resources */,
 				84415F4E1D160A75007D9E0B /* Button.png in Resources */,
 				8438CE921D35082700523C69 /* Assets.xcassets in Resources */,
 				845CF6AF1D168E9800F9AA6C /* back1x.png in Resources */,
