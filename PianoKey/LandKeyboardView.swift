@@ -49,9 +49,9 @@ class LandKeyboardView : UIView {
     var numberButton: LandKeyboardButton!
     var eraseButton: LandKeyboardButton!
     var spaceButtonWidth = UIScreen.mainScreen().bounds.width * 0.05
-    let buttonWidth = UIScreen.mainScreen().bounds.height * 0.17
+    var buttonWidth = UIScreen.mainScreen().bounds.height * 0.17
     let caseButtonWidth = UIScreen.mainScreen().bounds.width * 0.1
-    let buttonHeight = UIScreen.mainScreen().bounds.height * 0.08
+    var buttonHeight = UIScreen.mainScreen().bounds.height * 0.08
     var tapped = 2
     var numberPageChanged = false
     var switchedToNumbers = false
@@ -79,6 +79,19 @@ class LandKeyboardView : UIView {
         let screenWidth = UIScreen.mainScreen().bounds.width
         let space = screenWidth * 0.01
         let spaceY = screenWidth * 0.005
+        if screenWidth < 600 {
+            buttonHeight = UIScreen.mainScreen().bounds.height * 0.11
+            buttonWidth = UIScreen.mainScreen().bounds.height * 0.17
+        }
+        
+        if screenWidth < 500 {
+            buttonHeight = UIScreen.mainScreen().bounds.height * 0.11
+            buttonWidth = UIScreen.mainScreen().bounds.height * 0.14
+        }
+        
+        if screenWidth > 600 {
+            buttonHeight = UIScreen.mainScreen().bounds.height * 0.08
+        }
         
         let TButton = LandKeyboardButton(buttonTitle: "T")
         //TButton.backgroundColor = UIColor.blueColor()

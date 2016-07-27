@@ -93,7 +93,12 @@ class LeftKeyboardView : UIView {
         let screenWidth = UIScreen.mainScreen().bounds.width
         let space = screenWidth * 0.01
         let spaceY = screenWidth * 0.02
-        let buttonHeight = screenWidth * 0.11
+        var buttonHeight = screenWidth * 0.145
+        if screenWidth < 350 {
+            buttonHeight = screenWidth * 0.145
+        } else {
+            buttonHeight = screenWidth * 0.11
+        }
         
         let QButton = KeyboardButton(buttonTitle: "Q")
         QButton.frame = CGRect(x: screenWidth * 0.005, y: spaceY*5, width: buttonWidth, height: buttonHeight)
