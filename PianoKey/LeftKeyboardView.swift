@@ -16,7 +16,7 @@ extension UIView {
         UIView.animateWithDuration(animationDuration, animations: {[weak self] in
             let strongSelf = self!
             strongSelf.transform = CGAffineTransformMakeScale(factor, factor)
-            })
+        })
     }
     
     func resetScalingWithAnimationDuration(duration: NSTimeInterval){
@@ -40,15 +40,17 @@ class KeyboardButton : UIView {
         button.setTitle(buttonTitle, forState: .Normal)
         button.titleLabel?.font = UIFont(name: "Helvetica-Light", size: UIScreen.mainScreen().bounds.width * 0.065)
         button.setTitleColor(UIColor.blackColor(), forState: .Normal)
+        button.addTarget(self, action: #selector(enlargeForTouchDown), forControlEvents: .TouchDown)
+        button.addTarget(self, action: #selector(goToNormalSize), forControlEvents: UIControlEvents.AllEvents.exclusiveOr(.TouchDown))
         addSubview(button)
     }
     
     func goToNormalSize() {
-        self.resetScalingWithAnimationDuration(0.5)
+        self.resetScalingWithAnimationDuration(0.3)
     }
     
     func enlargeForTouchDown() {
-        self.scaleByFactor(3, animationDuration: 0.5)
+        self.scaleByFactor(3, animationDuration: 0.3)
     }
     
 }

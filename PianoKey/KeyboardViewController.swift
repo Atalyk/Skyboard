@@ -148,7 +148,7 @@ class KeyboardViewController: UIInputViewController {
         background.frame = CGRectMake(0.0, 0.0, screenWidth, screenHeight)
         self.view.layer.insertSublayer(background, atIndex: 0)
         
-        undoButton = UIButton(frame: CGRect(x: 0.0, y: 0.0, width: screenWidth * 0.2, height: extraButtonHeight))
+        undoButton = UIButton(frame: CGRect(x: 0.0, y: 5, width: screenWidth * 0.2, height: extraButtonHeight))
         //undoButton.setTitle("⌘Z", forState: .Normal)
         undoButton.contentMode = .Center
         undoButton.addTarget(self, action: #selector(KeyboardViewController.undoText), forControlEvents: .TouchUpInside)
@@ -157,7 +157,7 @@ class KeyboardViewController: UIInputViewController {
         undoButton.imageView?.contentMode = .ScaleAspectFit
         self.view.addSubview(undoButton)
         
-        cutButton = UIButton(frame: CGRect(x: screenWidth * 0.2, y: 0.0, width: screenWidth * 0.2, height: extraButtonHeight))
+        cutButton = UIButton(frame: CGRect(x: screenWidth * 0.2, y: 5, width: screenWidth * 0.2, height: extraButtonHeight))
         //cutButton.setTitle("⌘X", forState: .Normal)
         cutButton.setImage(UIImage(named: "cut"), forState: .Normal)
         cutButton.contentMode = .Center
@@ -165,7 +165,7 @@ class KeyboardViewController: UIInputViewController {
         cutButton.imageView?.contentMode = .ScaleAspectFit
         self.view.addSubview(cutButton)
         
-        copyButton = UIButton(frame: CGRect(x: screenWidth * 0.6, y: 0.0, width: screenWidth * 0.2, height: extraButtonHeight))
+        copyButton = UIButton(frame: CGRect(x: screenWidth * 0.6, y: 5, width: screenWidth * 0.2, height: extraButtonHeight))
         //copyButton.setTitle("⌘C", forState: .Normal)
         copyButton.setImage(UIImage(named: "copyit"), forState: .Normal)
         copyButton.contentMode = .Center
@@ -173,14 +173,14 @@ class KeyboardViewController: UIInputViewController {
         copyButton.imageView?.contentMode = .ScaleAspectFit
         self.view.addSubview(copyButton)
         
-        defaultButton = UIButton(frame: CGRect(x: screenWidth * 0.4, y: 0.0, width: screenWidth * 0.2, height: extraButtonHeight))
+        defaultButton = UIButton(frame: CGRect(x: screenWidth * 0.4, y: 5, width: screenWidth * 0.2, height: extraButtonHeight))
         defaultButton.setImage(UIImage(named: "keyboards"), forState: .Normal)
         defaultButton.contentMode = .Center
         defaultButton.addTarget(self, action: #selector(KeyboardViewController.defaultKeyboard), forControlEvents: .TouchUpInside)
         defaultButton.imageView?.contentMode = .ScaleAspectFit
         self.view.addSubview(defaultButton)
         
-        pasteButton = UIButton(frame: CGRect(x: screenWidth * 0.8, y: 0.0, width: screenWidth * 0.2, height: extraButtonHeight))
+        pasteButton = UIButton(frame: CGRect(x: screenWidth * 0.8, y: 5, width: screenWidth * 0.2, height: extraButtonHeight))
         //pasteButton.setTitle("⌘V", forState: .Normal)
         pasteButton.setImage(UIImage(named: "paste"), forState: .Normal)
         pasteButton.contentMode = .Center
@@ -188,25 +188,7 @@ class KeyboardViewController: UIInputViewController {
         pasteButton.imageView?.contentMode = .ScaleAspectFit
         self.view.addSubview(pasteButton)
         
-        if UIScreen.mainScreen().bounds.width < UIScreen.mainScreen().bounds.height {
-            lineViewOne = UIView(frame: CGRect(x: 0.0, y: screenWidth * 0.21, width: screenWidth, height: 0.8))
-            lineViewOne.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
-            self.view.addSubview(lineViewOne)
-        
-            lineViewTwo = UIView(frame: CGRect(x: 0.0, y: screenWidth * 0.32, width: screenWidth, height: 0.8))
-            lineViewTwo.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
-            self.view.addSubview(lineViewTwo)
-        } else {
-            lineViewOne = UIView(frame: CGRect(x: 0.0, y: screenWidth * 0.09, width: screenWidth, height: 1))
-            lineViewOne.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
-            self.view.addSubview(lineViewOne)
-            
-            lineViewTwo = UIView(frame: CGRect(x: 0.0, y: screenWidth * 0.135, width: screenWidth, height: 0.8))
-            lineViewTwo.backgroundColor = UIColor(white: 1.0, alpha: 0.5)
-            self.view.addSubview(lineViewTwo)
-        }
-        
-        currentButtonView = UIView(frame: CGRect(x: defaultButton.frame.origin.x, y: defaultButton.bounds.height, width: screenWidth * 0.2, height: 1.5))
+        currentButtonView = UIView(frame: CGRect(x: defaultButton.frame.origin.x, y: defaultButton.bounds.height + 5, width: screenWidth * 0.2, height: 1.5))
         currentButtonView.layer.backgroundColor = UIColor.whiteColor().CGColor
         self.view.addSubview(currentButtonView)
         

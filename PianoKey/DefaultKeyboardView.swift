@@ -46,9 +46,17 @@ class DefaultKeyboardView : UIView {
         super.init(frame: frame)
     
         let screenWidth = UIScreen.mainScreen().bounds.width
+        let screenHeight = UIScreen.mainScreen().bounds.height
         let space = screenWidth * 0.02
         let spaceY = screenWidth * 0.02
-        let buttonHeight = screenWidth * 0.11
+        var buttonHeight = screenWidth * 0.145
+        print(screenHeight/screenWidth)
+        if screenWidth < 350 {
+            buttonHeight = screenWidth * 0.145
+        } else {
+            buttonHeight = screenWidth * 0.11
+        }
+        
         
         let QButton = KeyboardButton(buttonTitle: "Q")
         QButton.frame = CGRect(x: 0.0, y: screenWidth * 0.1, width: buttonWidth, height: buttonHeight)
