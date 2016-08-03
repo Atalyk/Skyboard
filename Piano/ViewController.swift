@@ -90,6 +90,7 @@ class ViewController: UIViewController {
             
             textView = UITextView(frame: CGRect(x: screenWidth * 0.2, y: screenHeight * 0.65, width: screenWidth * 0.6, height: screenHeight * 0.3))
             textView.text = "Go to Settings > General > Keyboards > Add New Keyboard > Skyboard > Allow Full Access"
+            textView.editable = false
             textView.textColor = UIColor.whiteColor()
             textView.layer.backgroundColor = UIColor.clearColor().CGColor
             textView.textAlignment = .Center
@@ -121,6 +122,7 @@ class ViewController: UIViewController {
             
             textView = UITextView(frame: CGRect(x: screenWidth * 0.2, y: screenHeight * 0.6, width: screenWidth * 0.6, height: screenHeight * 0.3))
             textView.text = "Go to Settings > General > Keyboards > Add New Keyboard > Skyboard > Allow Full Access"
+            textView.editable = false
             textView.textColor = UIColor.whiteColor()
             textView.layer.backgroundColor = UIColor.clearColor().CGColor
             textView.textAlignment = .Center

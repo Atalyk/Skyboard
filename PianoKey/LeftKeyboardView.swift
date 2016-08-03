@@ -46,11 +46,11 @@ class KeyboardButton : UIView {
     }
     
     func goToNormalSize() {
-        self.resetScalingWithAnimationDuration(0.3)
+        self.resetScalingWithAnimationDuration(0.01)
     }
     
     func enlargeForTouchDown() {
-        self.scaleByFactor(3, animationDuration: 0.3)
+        self.scaleByFactor(2.5, animationDuration: 0.01)
     }
     
 }

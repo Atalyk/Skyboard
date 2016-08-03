@@ -31,11 +31,11 @@ class LandKeyboardButton : UIView {
     }
     
     func goToNormalSize() {
-        self.resetScalingWithAnimationDuration(0.3)
+        self.resetScalingWithAnimationDuration(0.01)
     }
     
     func enlargeForTouchDown() {
-        self.scaleByFactor(1.3, animationDuration: 0.3)
+        self.scaleByFactor(1.3, animationDuration: 0.01)
     }
     
 }
