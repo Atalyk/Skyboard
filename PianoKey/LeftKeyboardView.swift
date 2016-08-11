@@ -91,6 +91,7 @@ class LeftKeyboardView : UIView {
         super.init(frame: frame)
         
         let screenWidth = UIScreen.mainScreen().bounds.width
+        let screenHeight = UIScreen.mainScreen().bounds.height
         let space = screenWidth * 0.01
         let spaceY = screenWidth * 0.02
         var buttonHeight = screenWidth * 0.145
@@ -291,6 +292,11 @@ class LeftKeyboardView : UIView {
         numberButton.button.addTarget(self, action: #selector(LeftKeyboardView.switchNumberPage), forControlEvents: .TouchUpInside)
         numberButton.button.imageView?.contentMode = .ScaleAspectFit
         addSubview(numberButton)
+        
+        if screenWidth > 700 && screenHeight > 1000 {
+            nextKeyboardButton.frame = CGRect(x: 0, y: 0, width: buttonWidth*2, height: buttonWidth*2)
+            nextKeyboardButton.layer.backgroundColor = UIColor.whiteColor().CGColor
+        }
 
     }
     

@@ -58,6 +58,7 @@ class DefaultKeyboardView : UIView {
         }
         
         
+        
         let QButton = KeyboardButton(buttonTitle: "Q")
         QButton.frame = CGRect(x: 0.0, y: screenWidth * 0.1, width: buttonWidth, height: buttonHeight)
         buttons.append(QButton)
@@ -244,6 +245,11 @@ class DefaultKeyboardView : UIView {
         numberButton.button.titleLabel?.font = UIFont(name: "Helvetica-Light", size: UIScreen.mainScreen().bounds.width * 0.05)
         numberButton.button.addTarget(self, action: #selector(DefaultKeyboardView.switchNumberPage), forControlEvents: .TouchUpInside)
         addSubview(numberButton)
+        
+        if screenWidth > 700 && screenHeight > 1000 {
+            nextKeyboardButton.frame = CGRect(x: 0, y: 0, width: buttonWidth*2, height: buttonWidth*2)
+            nextKeyboardButton.layer.backgroundColor = UIColor.whiteColor().CGColor
+        }
         
     }
     

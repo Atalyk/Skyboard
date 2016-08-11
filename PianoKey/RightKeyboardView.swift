@@ -45,6 +45,7 @@ class RightKeyboardView : UIView {
         super.init(frame: frame)
         
         let screenWidth = UIScreen.mainScreen().bounds.width
+        let screenHeight = UIScreen.mainScreen().bounds.height
         let space = screenWidth * 0.01
         let spaceY = screenWidth * 0.02
         var buttonHeight = screenWidth * 0.145
@@ -245,6 +246,11 @@ class RightKeyboardView : UIView {
         numberButton.button.titleLabel?.font = UIFont(name: "Helvetica-Light", size: UIScreen.mainScreen().bounds.width * 0.05)
         numberButton.button.addTarget(self, action: #selector(RightKeyboardView.switchNumberPage), forControlEvents: .TouchUpInside)
         addSubview(numberButton)
+        
+        if screenWidth > 700 && screenHeight > 1000 {
+            nextKeyboardButton.frame = CGRect(x: 0, y: 0, width: screenWidth*0.1, height: screenWidth*0.1)
+            nextKeyboardButton.layer.backgroundColor = UIColor.whiteColor().CGColor
+        }
     
     }
     
